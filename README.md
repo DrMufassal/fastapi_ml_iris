@@ -75,19 +75,5 @@ curl -X POST "http://127.0.0.1:8000/predict"       -H "Content-Type: application
 - No database or authentication layer.
 - Feature values must be realistic measurements (cm).
 
-## How to Submit (Suggested)
-1. Create a new GitHub repo and push the three core files:
-   - `main.py`, `model.pkl` (after training), `requirements.txt`.
-2. Include this `README.md` in the repo root.
-3. Share the GitHub link as your deliverable/report.
-
-## Grading Checklist Mapping
-- **Model Implementation**: proper training/evaluation, saved as `model.pkl`.
-- **FastAPI Implementation**: `/`, `/predict`, `/model-info` with Pydantic validation & error handling; model loads on startup.
-- **Code Quality**: clean, commented, minimal dependencies.
-- **Documentation**: this `README.md` + interactive API docs via `/docs`.
-- **Testing**: demonstrate with Swagger UI and example `curl` calls.
-
 ## Notes
-- Optional extensions: logging, batch prediction, confidence scores (already included when available).
 - To pin versions for reproducibility, add exact versions in `requirements.txt`.# fastapi_ml_iris
